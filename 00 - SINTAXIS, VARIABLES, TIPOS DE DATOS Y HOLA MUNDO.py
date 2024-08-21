@@ -23,3 +23,19 @@
  """
 
 # Éste es un comentario de una linea que adjunta la url oficial de Phyton: https://www.python.org/
+"""Y éste
+   es un comentario de
+   varias lineas de ejemplo."""
+#Crea una variable:
+a =1
+print (a)
+
+#Datos primitivos:
+
+mi_int = 1
+mi_float = 1.3
+mi_bool = True
+mi_string = "hola"
+mi_otro_string = 'Holaa'
+
+print ("hola! uso python!")
