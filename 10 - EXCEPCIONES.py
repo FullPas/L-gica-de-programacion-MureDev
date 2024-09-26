@@ -36,7 +36,7 @@ def process_params(parameters: list):
         raise ZeroDivisionError()                               #Con ésto lo capturamos para controlarlo.
     
     elif type(parameters[2]) == str:
-        raise StrTypeError ("El segundo elemento de la lista no puede ser una cadena de texto")
+        raise StrTypeError ("El tercer elemento de la lista no puede ser una cadena de texto")
         
     print(parameters[2])                                                #Nosotros aquí buscamos acceder al parámetro de la posición 2 de la lista, pero... y su dividimos 0, en tre 1? nos dará error?
     print(parameters[0]/parameters[1])                                  #El aprámetro 0 , lo dividimos entre el parámetro 1
@@ -56,10 +56,13 @@ except ZeroDivisionError as e:
 except StrTypeError as e:
     print(f"{e}")
 
-#Un Error de descarte
+#Captura de cualquier otro error como buena práctica.
 
 except Exception as e:                                                   #Como buena práctica, si no entra en ningun bloque anterior, que pueda salir por el siguiente:
     print(f"Se ha producido un error inesperado {e}")
-print("El programa finaliza")
+else:                                                                    # En Try/Except existe también ( al igual qu en el condicional IF) Else, donde, si no se cumplen ninguna de las anteriores excepciones, podemos indicar, por ejemplo, que no hubo ningún error.
+    print("No se ha producido ningún error.")
+finally:
+    print("El programa finaliza  sin detenerse.")
 
 
