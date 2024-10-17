@@ -57,7 +57,7 @@ my_number //= 2 #
 print(my_number)
 
 #Operadores de identidad: (sirven para comparar el valor de la posición de la memoria, es decir, que nos puede servir en algún momento para comparar si de verdad dos objetos, son iguales.)
-my_new_number = my_number #(si ponemos como valor 1.0, nos dará FLASE porque aunque sea igual al resultado anterior, ambos están en posiciones distintas de memoria)
+my_new_number = my_number #(si ponemos como valor 1.0, nos dará FALSE porque aunque sea igual al resultado anterior, ambos están en posiciones distintas de memoria)
 print(f"my_number is my_new_number es:{my_number is my_new_number}")
 print(f"my_number is not my_new_number es:{my_number is not my_new_number}")
 
