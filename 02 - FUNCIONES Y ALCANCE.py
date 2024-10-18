@@ -20,12 +20,16 @@
  * Presta especial atención a la sintaxis que debes utilizar en cada uno de los casos.
  * Cada lenguaje sigue una convenciones que debes de respetar para que el código se entienda.
 """
-
+#DEFINICIÓN:
+"""
+Bloque de código que lo reutilizamos para hacer una acción específica, es una forma lógica de reutilizar, sea más legible, 
+hacer que no se cometan tantus bugs, que sea más facil de escalar, de mantener...
+"""
 ###FUNCIONES DEFINIDAS POR EL USUARIO###
 
 #FUNCIÓN SIMPLE:
 
-def greet():
+def greet(): #saludo
     print ("Hola Python") #--> Usamos siempre la plabra reservada "def" para crear una función, en éste caso, sin atributos.
 greet()                   # Luego con greet, llamamos a la función para que nos dé el resultado de print.
 
@@ -113,13 +117,15 @@ outer_function()
 #Por ejemplo:
 
 print()                     # Que ya es una función en sí misma.
-print(len("Pascual"))       # Nos imprime numero de carácteres que le hemos pasado en el String
+print(len("Pascual"))       # LEN es una función que nos retorna un entero. 
+                            # Si le pasamos una estructura d edatos, nos contará cuantos elementos tiene esa estructura. La función en sí nos imprime numero de carácteres que le hemos pasado en el String
 print(type(38))             # Nos dice el tipo de dato que le pasamos.
 print("pascual".upper())    # Nos modifica el string, pasandolo a mayúsculas
 
 #########################################################################################################################################################################
 ###VARIABLES GLOBALES Y LOCALES###
 #########################################################################################################################################################################
+#ÁMBITO o SCOPE: Es Cuándo tenemos acceso a segun qué de nuestro código
 
 var_global = "Python"
 

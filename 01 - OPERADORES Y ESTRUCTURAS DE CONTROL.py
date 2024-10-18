@@ -62,8 +62,9 @@ print(f"my_number is my_new_number es:{my_number is my_new_number}")
 print(f"my_number is not my_new_number es:{my_number is not my_new_number}")
 
 #Operadores de pertenencia: ( es si ALGO pertenece a ALGO)
-    #Imaginemos que quiero comprobar si la letra L está en mi nombre:
+    #Imaginemos que quiero comprobar si la letra L está en mi nombre: (se usa cuando se usan conjuntos, estructuras..)
 print(f"'l' in Pascual = {'l' in 'Pascual'}")
+print(f"'l' not in Pascual = {'l' not in 'Pascual'}")
 
 
 #Operadores de bit ( básicamente trabaja a nivel de bit para hacer comparación)
@@ -89,25 +90,25 @@ my_string = "Brais"
 
 if my_string == "Mouredev":
     print ("my_string es 'Mouredev'")
-elif my_string == "Brais":
+elif my_string == "Brais":                  #Pueden haber comprobaciones intermedias...
     print ("my_string es 'Brais'")
 else:
     print("my_string no es 'Mouredev'")
 
 #Iterativas
 
-for i in range (11):
+for i in range (11): #Rango va a tener en cuenta desde el 0 hasta el numero que tú le pongas, obviando éste último.
     print(i)
 
 #Planteas que el bucle se ejecute mientras esa condición sea verdadera. por ejemplo si creamos una variable en la que:
 i = 0
 
-# Ejecuta el bucle infinitamente mientras esta condición se dé.
+# Ejecuta el bucle infinitamente mientras esta condición se dé (sea verdadera).
 while i <= 10:
     print(i) #Con ésto se ejecutaría indefinidamente
     i += 1 # Se le iría sumando 1 al resultado anterior hasta llegar al 10, lo cual se detendría.
 
-#Manejo de excepciones.
+#Manejo de excepciones. (también pertenecen a las estructuras de control)
 #Útil para evitar que el programa, no se rompa, que aunque esa parte del código no se ejecute, mande un mensaje al usuario y podamos continuar. Apaliar el error.
 
 #Si lo lanzamos así tal cual, nos lanzará un "ZeroDivisionError y el programa se detendrá"
@@ -116,11 +117,13 @@ while i <= 10:
 #Entonces para apaliarlo...:
 try:
     print (10 / 0)
-except: #cath
+except: #cath en otros lenguajes, como JAVA
     print("Se ha producido un error")
 finally:
     print("Ha finalizado el manejo de excepción")
 
 for i in range (10, 56):
+    #Como queremos controlar el flujo, ¿como compruebo si un nº es par? con una definición matemática si al hayar el módulo de 2 es 0, ese número es PAR.
+    #Y que sea distinto al 16, lo podemos meter en la mimsma iteración del if con un AND
     if i % 2 == 0 and i != 16 and i % 3 != 0:
         print(i)
